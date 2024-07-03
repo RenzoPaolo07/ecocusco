@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Cusco</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            background-image: url('https://www.pactoglobal-colombia.org/images/jch-optimize/ng/images_NoticiasHome_2023_PORTS__e5e35.webp'); /* Replace with your banner image */
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .banner h2, .banner p, .banner a {
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #d6b8e9; /* Color fondo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 32px;
+            color: #4CAF50;
+        }
+        .features, .events, .guide {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .feature, .event, .guide-item {
+            flex: 1 1 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .feature img, .event img, .guide-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .feature h3, .event h3, .guide-item h3 {
+            margin-top: 10px;
+            color: #4CAF50;
+        }
+        .feature p, .event p, .guide-item p {
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #45a049;
+        }
+        @media (max-width: 768px) {
+            .feature, .event, .guide-item {
+                flex: 1 1 100%;
+            }
+            form input, form textarea {
+                width: 100%;
+            }
+        }
+        .testimonials, .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .testimonial, .team-member {
+            flex: 1 1 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .testimonial img, .team-member img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .testimonial p, .team-member p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Eco Cusco</h1>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#funcionalidades">Funcionalidades</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#guia">Guía de Reciclaje</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#equipo">Nuestro Equipo</a>
+                <a href="#testimonios">Testimonios</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="banner">
+        <h2>Eco Cusco: Juntos por un Cusco más limpio</h2>
+        <p>Tu guía práctica de reciclaje y gestión de residuos</p>
+        <a href="#descargar" style="color: white; text-decoration: underline;">Descargar la App</a>
+    </section>
+    
+    <section id="inicio" class="container">
+        <h2 class="section-title">¿Qué es Eco Cusco?</h2>
+        <p>Eco Cusco es una aplicación diseñada para fomentar la educación ambiental y la participación activa en el reciclaje. Proporcionamos información y herramientas prácticas para la gestión de residuos en Cusco. Nuestra misión es crear una comunidad comprometida con el medio ambiente, donde cada ciudadano se sienta motivado a participar en la conservación de nuestra hermosa ciudad.</p>
+        <img src="Imagenes Eco Cusco/ECO CUSCO.png" alt="Eco Cusco App" style="display: block; margin: 0 auto; max-width: 200px;">
+    </section>
+    
+    <section id="funcionalidades" class="container">
+        <h2 class="section-title">Funcionalidades de Eco Cusco</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Mapa de Puntos de Reciclaje</h3>
+                <p>Localiza los puntos de reciclaje más cercanos a ti con facilidad y rapidez. La aplicación te muestra en un mapa interactivo todos los puntos de reciclaje disponibles en Cusco.</p>
+                <img src="Imagenes Eco Cusco/Captura de pantalla 2024-06-28 001444.png" alt="Mapa de Puntos de Reciclaje">
+            </div>
+            <div class="feature">
+                <h3>Calendario de Recolección</h3>
+                <p>Consulta los días y horarios de recolección de residuos para que nunca te pierdas la fecha. Mantén tu hogar limpio y organizado con nuestro calendario integrado.</p>
+                <img src="Imagenes Eco Cusco/ZONIFICACION_JUNIO_2023.png" alt="Calendario de Recolección">
+            </div>
+            <div class="feature">
+                <h3>Guía de Reciclaje</h3>
+                <p>Aprende a reciclar correctamente con nuestra guía detallada. Conoce qué materiales son reciclables y cómo debes prepararlos para su correcta disposición.</p>
+                <img src="Imagenes Eco Cusco/infobae2.jpg" alt="Guía de Reciclaje">
+            </div>
+            <div class="feature">
+                <h3>Minijuegos Educativos</h3>
+                <p>Diviértete y aprende sobre reciclaje con nuestros minijuegos. Ideales para todas las edades, estos juegos te enseñarán la importancia del reciclaje de manera interactiva.</p>
+                <img src="Imagenes Eco Cusco/maxresdefault.jpg" alt="Minijuegos Educativos">
+            </div>
+            <div class="feature">
+                <h3>Reportes de Basura</h3>
+                <p>Informa sobre problemas de basura en tu comunidad y ayuda a mantener Cusco limpio. Reporta puntos de acumulación de basura y envía sugerencias para mejorar la gestión de residuos.</p>
+                <img src="Imagenes Eco Cusco/standard_residuos.jpg" alt="Reportes de Basura">
+            </div>
+        </div>
+    </section>
+    
+    <section id="eventos" class="container">
+        <h2 class="section-title">Eventos y Talleres</h2>
+        <div class="events">
+            <div class="event">
+                <h3>Taller de Reciclaje Creativo</h3>
+                <p>Fecha: 15 de julio. Lugar: Centro Comunitario San Blas. Participa en nuestro taller y aprende a reutilizar materiales reciclables para crear arte y objetos útiles.</p>
+                <img src="Imagenes Eco Cusco/manualidades-mix_web.jpg" alt="Taller de Reciclaje Creativo">
+            </div>
+            <div class="event">
+                <h3>Jornada de Limpieza Comunitaria</h3>
+                <p>Fecha: 20 de agosto. Lugar: Plaza de Armas. Únete a nosotros en una jornada de limpieza y demostremos juntos nuestro compromiso con el medio ambiente.</p>
+                <img src="Imagenes Eco Cusco/mantener-comunidad-vecinos-limpia-compressed.jpg" alt="Jornada de Limpieza Comunitaria">
+            </div>
+            <div class="event">
+                <h3>Seminario sobre Sostenibilidad</h3>
+                <p>Fecha: 10 de septiembre. Lugar: Universidad Continental. Aprende sobre prácticas sostenibles y cómo puedes aplicarlas en tu vida diaria.</p>
+                <img src="Imagenes Eco Cusco/1500x844-importancia-sostenibilidad.jpg" alt="Seminario sobre Sostenibilidad">
+            </div>
+        </div>
+    </section>
+    
+    <section id="guia" class="container">
+        <h2 class="section-title">Guía de Reciclaje</h2>
+        <div class="guide">
+            <div class="guide-item">
+                <h3>Plásticos</h3>
+                <p>Tipos de plásticos reciclables y cómo prepararlos. Lave y seque los plásticos antes de llevarlos al punto de reciclaje.</p>
+                <img src="Imagenes Eco Cusco/ventajas-reciclaje-plastico.jpg" alt="Reciclaje de Plásticos">
+            </div>
+            <div class="guide-item">
+                <h3>Papel y Cartón</h3>
+                <p>Cómo reciclar papel y cartón de manera efectiva. Asegúrate de que estén secos y libres de residuos alimenticios.</p>
+                <img src="Imagenes Eco Cusco/Post-2_2-Febrero.jpg" alt="Reciclaje de Papel y Cartón">
+            </div>
+            <div class="guide-item">
+                <h3>Vidrio</h3>
+                <p>Instrucciones para reciclar vidrio. Retira las tapas y enjuaga los envases antes de reciclarlos.</p>
+                <img src="Imagenes Eco Cusco/o_1gpfhg4ms2tde3j1u608p71j4ea.jpeg" alt="Reciclaje de Vidrio">
+            </div>
+            <div class="guide-item">
+                <h3>Metales</h3>
+                <p>Qué metales se pueden reciclar y cómo hacerlo. Los metales deben estar limpios y libres de contaminantes.</p>
+                <img src="Imagenes Eco Cusco/16850005371352.jpg" alt="Reciclaje de Metales">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p>¿Tienes preguntas o necesitas más información? Contáctanos.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Correo Electrónico: info@ecocusco.com</p>
+        <p>Teléfono: +51 995 877 921</p>
+        <div>
+            <a href="https://www.facebook.com/people/Eco-Cusco/61561471803943/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ecocuscouc_off/" target="_blank">Instagram</a>
+            <a href="https://x.com/Eco_CuscoUC" target="_blank">Twitter</a>
+        </div>
+    </section>
+    
+    <section id="equipo" class="container">
+        <h2 class="section-title">Nuestro Equipo</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>Renzo Paolo Alessandro Costa Paucarmayta</h3>
+                <p>Estudiante de Ingenieria de sistemas e informatica</p>
+                <img src="Imagenes Eco Cusco/pasa.jpg" alt="Renzo Costa">
+            </div>
+            <div class="team-member">
+                <h3>Estefano Agurto Andrade</h3>
+                <p>Estudiante de Ingenieria de sistemas e informatica</p>
+                <img src="Imagenes Eco Cusco/Foto de Renzo Costa.jpg" alt="Estefano Agurto">
+            </div>
+            <div class="team-member">
+                <h3>Josef Fernando Condori Monroy</h3>
+                <p>Estudiante de Ingenieria de sistemas e informatica</p>
+                <img src="Imagenes Eco Cusco/unnamed (2).jpg" alt="Josef Condori">
+            </div>
+            <div class="team-member">
+                <h3>Oscar Alejandro Vergara Izquierdo</h3>
+                <p>Estudiante de Ingenieria de sistemas e informatica</p>
+                <img src="Imagenes Eco Cusco/unnamed (1).jpg" alt="Oscar Vergara">
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonios" class="container">
+        <h2 class="section-title">Testimonios</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Gracias a Eco Cusco, mi familia y yo hemos aprendido a reciclar de manera correcta. La aplicación es muy fácil de usar y tiene mucha información útil."</p>
+                <img src="Imagenes Eco Cusco/istockphoto-104641618-612x612.jpg" alt="Testimonio 1">
+                <h3>Ana Martínez</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Participé en una jornada de limpieza organizada por Eco Cusco y fue una experiencia increíble. Me siento más conectado con mi comunidad y motivado a cuidar el medio ambiente."</p>
+                <img src="Imagenes Eco Cusco/pngtree-man-recycling-plastic-bottles-into-the-trash-photo-image_2133273.jpg" alt="Testimonio 2">
+                <h3>José Fernández</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Los minijuegos educativos son geniales para enseñar a mis hijos sobre la importancia del reciclaje. ¡Nos divertimos mucho mientras aprendemos!"</p>
+                <img src="Imagenes Eco Cusco/istockphoto-1386864609-612x612.jpg" alt="Testimonio 3">
+                <h3>Lucía Rodríguez</h3>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2024 Eco Cusco. Todos los derechos reservados.</p>
+        <div>
+            <a href="#inicio">Inicio</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#guia">Guía de Reciclaje</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#equipo">Nuestro Equipo</a>
+            <a href="#testimonios">Testimonios</a>
+        </div>
+    </footer>
+</body>
+</html>
